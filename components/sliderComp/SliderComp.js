@@ -100,7 +100,7 @@ const SliderComp = () => {
 
 							<div className='ml-3'>
 								<p className='font-semibold mb-2'>
-									Деркач Алеся
+									Деркач Андрей
 								</p>
 								<div className="rating rating-sm">
 									<input type="radio" name="rating-2" className="mask mask-star-2 bg-[#e8b846]" />
