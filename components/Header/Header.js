@@ -5,11 +5,17 @@ import { Link as LinkScroll } from 'react-scroll';
 export default function Header() {
 
 	return (
-		<header className='bg-base-100 sticky top-0 z-50 w-full'>
+		<header className='sticky bg-transparent top-0 z-50 w-full'>
 			<div className='container mx-auto'>
 				<div className="navbar px-0">
 					<div className="navbar-start">
-						<Image src='/logo/logo.webp' alt='логотип' width={80} height={40} />
+						{/* <Image src='/logo/logo.webp' alt='логотип' width={80} height={40} /> */}
+						<p className='uppercase text-xl italic text-white'>
+							your{' '}
+							<span className='text-[#9D0D79]'>
+								brend
+							</span>
+						</p>
 					</div>
 					<div className="navbar-end">
 						<div className="dropdown dropdown-end">
@@ -29,9 +35,22 @@ export default function Header() {
 										className="cursor-pointer hover:bg-slate-300"
 										rel="nofollow"
 										href='#/'
-										
+
 									>
 										Главная
+									</LinkScroll>
+								</li>
+								<li>
+									<LinkScroll
+										to="preimushestva"
+										smooth={true}
+										offset={-100}
+										duration={800}
+										className="cursor-pointer hover:bg-slate-300"
+										rel="nofollow"
+										href='#/'
+									>
+										Преимущества
 									</LinkScroll>
 								</li>
 								<li>
@@ -48,19 +67,6 @@ export default function Header() {
 									</LinkScroll>
 								</li>
 
-								<li>
-									<LinkScroll
-										to="otzyvy"
-										smooth={true}
-										offset={-100}
-										duration={800}
-										className="cursor-pointer hover:bg-slate-300"
-										rel="nofollow"
-										href='#/'
-									>
-										Отзывы
-									</LinkScroll>
-								</li>
 								<li>
 									<LinkScroll
 										to="contacts"
